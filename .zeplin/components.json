@@ -1,0 +1,37 @@
+{
+    "plugins": [
+        {
+            "name": "@zeplin/cli-connect-react-plugin"
+        },
+        {
+            "name": "@zeplin/cli-connect-storybook-plugin",
+            "config": {
+                "url": "http://localhost:6006",
+                "startScript": "storybook",
+                "fetchStories": false
+            }
+        }
+    ],
+    "projects": [
+        "61956ef13990bfa950881901"
+    ],
+    "styleguides": [],
+    "components": [
+        {
+            "path": "src/components/Button.js",
+            "zeplinIds": [
+                "6196b02b4a6172a9962e1cb8",
+                "6196b368788c5faad67f93d3",
+                "6196b3683b721ca933386ce9"
+            ],
+            "storybook": {
+                "kind": "example-button",
+                "stories": [
+                    "primary",
+                    "secondary",
+                    "rounded"
+                ]
+            }
+        }
+    ]
+}
