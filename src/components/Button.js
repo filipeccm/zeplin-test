@@ -10,7 +10,7 @@ export default function Button({ label, primary, rounded }) {
         width: "100px",
         height: "60px",
         backgroundColor: primary ? "yellow" : "white",
-        borderRadius: "0px",
+        borderRadius: rounded ? "8px" : "0px",
         border: "1px black solid",
         textAlign: "center",
         font: "Roboto",

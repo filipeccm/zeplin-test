@@ -18,8 +18,8 @@ const Template = (args) => <Button {...args} />;
 export const Primary = Template.bind({});
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
 Primary.args = {
-  primary: true,
   label: 'Button',
+  primary: true,
   rounded: false,
 };
 Primary.parameters = {
@@ -34,10 +34,20 @@ Secondary.args = {
   rounded: false,
 };
 
+Secondary.parameters = {
+  zeplinLink: "zpl://components?pid=61956ef13990bfa950881901&coid=6196b368788c5faad67f93d3"
+
+}
+
 export const Rounded = Template.bind({});
 Rounded.args = {
   label: 'Button',
   primary: true,
   rounded: true,
 };
+
+Rounded.parameters = {
+  zeplinLink: "zpl://components?pid=61956ef13990bfa950881901&coid=6196b3683b721ca933386ce9"
+
+}
 
